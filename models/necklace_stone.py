@@ -1,9 +1,9 @@
-from enums import TransparencyLevel
+from enums import transparency_level
 
 
 class NecklaceStone:
 
-    def __init__(self, name="No name", transparency_level=TransparencyLevel,
+    def __init__(self, name="No name", transparency_level=transparency_level,
                  mine_place="No name", price=0.0, carats=0.0):
         self.name = name
         self.transparency = transparency_level

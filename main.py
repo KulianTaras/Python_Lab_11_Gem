@@ -1,10 +1,10 @@
-from managers.JewelerManager import JewelerManager
-from models.Gem import Gem
-from models.SemiPreciousStone import SemiPreciousStone
-from models.NecklaceStone import NecklaceStone
-from enums.TransparencyLevel import TransparencyLevel
-from enums.CleavageLevel import CleavageLevel
-from enums.Origin import Origin
+from managers.jeweler_manager import JewelerManager
+from models.gem import Gem
+from models.semi_precious_stone import SemiPreciousStone
+from models.necklace_stone import NecklaceStone
+from enums.transparency_level import TransparencyLevel
+from enums.cleavage_level import CleavageLevel
+from enums.origin import Origin
 
 
 def main():

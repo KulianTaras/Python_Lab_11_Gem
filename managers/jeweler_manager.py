@@ -1,5 +1,5 @@
-from enums import TransparencyLevel
-from models import NecklaceStone
+from enums import transparency_level
+from models import necklace_stone
 
 
 class JewelerManager:
@@ -9,7 +9,7 @@ class JewelerManager:
     def __del__(self):
         print("Execute Manager")
 
-    def add_stone(self, new_stone=NecklaceStone):
+    def add_stone(self, new_stone=necklace_stone):
         self.stone_list.append(new_stone)
 
     def sort_stones_by_price(self, reverse=True):
@@ -20,8 +20,8 @@ class JewelerManager:
         return sorted(self.stone_list, key=lambda stone: stone.carats,
                       reverse=reverse)
 
-    def find_stones_by_transparency(self, to_level=repr(TransparencyLevel),
-                                    from_level=repr(TransparencyLevel)):
+    def find_stones_by_transparency(self, to_level=repr(transparency_level),
+                                    from_level=repr(transparency_level)):
         return list(filter(lambda stone:
                            from_level <= repr(stone.transparency) <= to_level,
                            self.stone_list))

@@ -1,6 +1,6 @@
-from models.NecklaceStone import NecklaceStone
-from enums.CleavageLevel import CleavageLevel
-from enums.TransparencyLevel import TransparencyLevel
+from models.necklace_stone import NecklaceStone
+from enums.cleavage_level import CleavageLevel
+from enums.transparency_level import TransparencyLevel
 
 
 class Gem(NecklaceStone):
