@@ -6,6 +6,9 @@ class JewelerManager:
     def __init__(self, stone_list=[]):
         self.stone_list = stone_list
 
+    def __del__(self):
+        print("Execute Manager")
+
     def add_stone(self, new_stone=NecklaceStone):
         self.stone_list.append(new_stone)
 
